@@ -23,19 +23,17 @@ function setup() {
   
   if(windowWidth>windowHeight){
     canvas = createCanvas(windowWidth, windowHeight/2);
-    
-
+    var text = windowHeight/1.7+ "px";
+    document.getElementById("me").style.marginTop = text;
   }
   else{
     canvas = createCanvas(windowWidth, windowHeight/3);
-    document.getElementById("center").style.marginTop = "windowHeight/3";
+    var text = windowHeight/1.7+ "px";
+    document.getElementById("me").style.marginTop = text;
   }
   
   canvas.position(0,0);
-  // // canvas.style('z-index','-1');
-  // var d = document.getElementById('center');
-  // d.style.top = windowHeight/2+'px';
-  // d.style.position = "absolute";
+ 
   
   for(let i = 0; i<drawing.length;i+=5){
     x.push(drawing[i].x);
