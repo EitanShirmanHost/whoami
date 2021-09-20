@@ -28,7 +28,7 @@ function setup() {
   }
   else{
     canvas = createCanvas(windowWidth, windowHeight/3);
-    var text = windowHeight/1.7+ "px";
+    var text = windowHeight/2.5+ "px";
     document.getElementById("me").style.marginTop = text;
   }
   
