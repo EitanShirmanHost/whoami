@@ -1,0 +1,58 @@
+ html, body {
+  margin: 0;
+  padding: 0;
+}
+canvas {
+  display: block;
+}
+
+
+
+
+
+
+div{
+margin-bottom: 26em;
+}
+
+center{
+  /* padding-top: 25%; */
+  background-color: #ffff;
+  /* margin-left: 28%; */
+  
+} 
+img{
+  margin-left: 25px;
+  padding-top: 12px;
+  padding-bottom: 12px;
+}
+
+p{
+  color: rgb(41, 41, 41);  
+  font-family: charter, Georgia, Cambria, Times New Roman, Times, serif; 
+  font-weight: 400; 
+  line-height: 27px; 
+  letter-spacing: -0.007em;
+  width: 50%;
+}
+
+h2{
+  color: rgb(41, 41, 41); 
+  font-family: fell, Georgia, Cambria; 
+  font-weight: 400;
+  margin-bottom: 5px;
+  margin-top: 40px;
+}
+
+h1{
+  color: rgb(41, 41, 41); 
+  font-family: fell, Georgia, Cambria; 
+  font-weight: 400;
+  margin-top: 80px;
+}
+
+#engines{
+  margin-top: 50px;
+  border: dashed rgba(41, 41, 41, 0.08); 
+  width: 610px;
+}
