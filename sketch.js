@@ -1,9 +1,5 @@
 
 
-function windowResized(){
-  resizeCanvas(windowWidth,windowHeight);
-}
-
 let x = [];
 let y = [];
 
@@ -25,6 +21,11 @@ function setup() {
     canvas = createCanvas(windowWidth, windowHeight/2);
     var text = windowHeight/1.7+ "px";
     document.getElementById("me").style.marginTop = text;
+    
+    function windowResized(){
+    resizeCanvas(windowWidth,windowHeight);
+} 
+
   }
   else{
     canvas = createCanvas(windowWidth, windowHeight/3);
