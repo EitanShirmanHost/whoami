@@ -1,20 +1,41 @@
- html, body {
-  margin: 0;
-  padding: 0;
-}
+
+ html{
+  font-family: 'Source Sans Pro', sans-serif;
+}  
+
 canvas {
   display: block;
 }
 
 
-center{
 
-  background-color: #ffff;
-  
-} 
+#Hey{
+ 
+ margin-left: 57%;
+ color: white;
+ font-size: 150% ;
+ 
 
 
+}
+#ES{
+ 
+  margin-left: 57%;
+  color: white;
+  font-size: 150% ;
+  margin-bottom: 20vh;
+ 
+ 
+ }
+ @import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@200&display=swap');
+ /*
 
+ 
+ html, body {
+  margin: 0;
+  padding: 0;
+  font-family: charter, Georgia, Cambria, Times New Roman, Times, serif; 
+}
 
 
 
@@ -26,7 +47,7 @@ img{
 
 p{
   color: rgb(41, 41, 41);  
-  font-family: charter, Georgia, Cambria, Times New Roman, Times, serif; 
+  
   font-weight: 400; 
   line-height: 27px; 
   letter-spacing: -0.007em;
@@ -48,8 +69,4 @@ h1{
   margin-top: 80px;
 }
 
-#engines{
-  margin-top: 50px;
-  border: dashed rgba(41, 41, 41, 0.08); 
-  width: 610px;
-}
+*/

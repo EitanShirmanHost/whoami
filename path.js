@@ -2028,7 +2028,7 @@ console.log("avgY"+avgY);
 
 for(var i = 0, length = drawing.length; i < length; i++){
     drawing[i].x-=avgX*drawingScale;
-    drawing[i].y-=avgY*drawingScale*0.7;
+    drawing[i].y-=avgY*drawingScale-50;
 
     drawing[i] = {'x':drawing[i].x/divisor,'y':drawing[i].y/divisor};
 }

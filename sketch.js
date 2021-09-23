@@ -15,11 +15,21 @@ var canvas;
 
 function setup() {
   
-  
-  
+  let social_height = windowWidth/8+"px";
+  let social_text = windowHeight/20+"px";
+  document.getElementById("github").style.height = social_height;
+  document.getElementById("facebook").style.height = social_height;
+  document.getElementById("twitter").style.height = social_height;
+  document.getElementById("linkedin").style.height = social_height;
+  document.getElementById("instagram").style.height = social_height;
+
+  document.getElementById("ContactMeAt").style.fontSize = social_text;
+ 
+
+  console.log(social_height);
   if(windowWidth>windowHeight){
     canvas = createCanvas(windowWidth, windowHeight/2);
-    var text = windowHeight/1.7+ "px";
+    var text = height/2 + "px";
     document.getElementById("me").style.marginTop = text;
     
     function windowResized(){
@@ -29,12 +39,11 @@ function setup() {
   }
   else{
     canvas = createCanvas(windowWidth, windowHeight/3);
-    var text = windowHeight/2.5+ "px";
-    document.getElementById("me").style.marginTop = text;
+    
   }
   
   canvas.position(0,0);
- 
+  canvas.style('z-index','-1');
   
   for(let i = 0; i<drawing.length;i+=5){
     x.push(drawing[i].x);
@@ -84,8 +93,8 @@ function draw() {
   
   background(0);
 
-  let vx = epiCycle(avgX, 50, 0, fourierX);
-  let vy = epiCycle(50, height  -200, HALF_PI, fourierY);
+  let vx = epiCycle(avgX + windowWidth/10, height*0.2, 0, fourierX);
+  let vy = epiCycle( windowWidth/10, height*0.45, HALF_PI, fourierY);
   
   let v = createVector(vx.x, vy.y);
   path.unshift(v);
